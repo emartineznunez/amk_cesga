@@ -1,0 +1,21 @@
+#%Module1.0#####################################################################
+
+#module dependencies ####################
+module load nodejs/14.17.6 bokeh/2.4.2 networkx
+#########################################
+#Application/version ####################
+set curMod [module-info name]
+set app [lrange [split $curMod "/"] 0 0]
+set version [lrange [split $curMod "/"] 1 1]
+#set *** ***
+#########################################
+set rootdir [string range $ModulesCurrentModulefile 0 [expr {[string first "modules" $ModulesCurrentModulefile]-2}]]
+proc ModulesHelp { } {
+global app version curMod rootdir ModulesCurrentModulefile
+puts stderr "\t${app} \n\tVersion $version\n"
+}
+module-whatis "Loads $curMod (use help for more info)"
+#basedir ################################
+set modroot $rootdir
+#########################################
+prepend-path PATH $modroot/scripts

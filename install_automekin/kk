@@ -1,0 +1,1 @@
+>    SRUN="srun --exclusive -N1 -n1 --mem=$(( $MEMPERCORE*$corespertask )) -c $corespertask"

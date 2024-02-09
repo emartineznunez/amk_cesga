@@ -21,3 +21,4 @@ git clone https://github.com/dgarayr/amk_tools.git
 cd amk_tools
 pip install -e .
 cp -r ${cwd}/modules .
+rm $HOME/amk-2021/modules/2021*

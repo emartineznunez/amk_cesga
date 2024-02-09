@@ -15,7 +15,7 @@ The scripts in the folder install_automekin will show you how to install AutoMeK
   ```
   chmod +x install.sh
   ```
-- Install `AutoMekin` and `amk_tools` in your accounts:
+- Install `AutoMekin` and `amk_tools` in your account:
   ```
   ./install.sh
   ```

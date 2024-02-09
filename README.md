@@ -24,6 +24,13 @@ The scripts in the folder install_automekin will show you how to install AutoMeK
   module use $HOME/amk-2021/modules
   module use $HOME/amk_tools/modules
   ```
-- Finally, to run AutoMeKin, this are the modules lo load:
+- Finally, to run AutoMeKin, just load the local module:
+  ```
+  module load amk/local
+  ```
+- Likewise, for amk_tools, just type:
+  ```
+  module load amk_tools/local
+  ```
  
 

@@ -11,11 +11,11 @@ The scripts in the folder install_automekin will show you how to install AutoMeK
   ```
   cd amk_cesga/install_automekin
   ```
-- Executable permission:
+- Give appropriate permissions to `install.sh`:
   ```
   chmod +x install.sh
   ```
-- Install AutoMekin and amk_tools:
+- Install `AutoMekin` and `amk_tools` in your accounts:
   ```
   ./install.sh
   ```

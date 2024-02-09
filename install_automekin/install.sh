@@ -18,4 +18,4 @@ rm -rf amk_tools
 git clone https://github.com/dgarayr/amk_tools.git
 cd amk_tools
 pip install -e .
-wget -r $path_to_dir .
+wget -r https://raw.githubusercontent.com/emartineznunez/amk_cesga/main/install_automekin/modules/ .

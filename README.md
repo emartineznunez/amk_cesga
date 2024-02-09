@@ -15,7 +15,7 @@ Here is the recipe to install AutoMeKin in FT-III:
   ```
   chmod +x install.sh
   ```
-- Install `AutoMekin` and `amk_tools` in your account:
+- Run the script to install `AutoMekin` and `amk_tools` in your account:
   ```
   ./install.sh
   ```

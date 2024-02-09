@@ -1,5 +1,6 @@
 #!/bin/bash
 #Installing automekin
+cwd=$PWD
 module load ase
 rm -rf AutoMeKin
 git clone https://github.com/emartineznunez/AutoMeKin.git 
@@ -18,4 +19,4 @@ rm -rf amk_tools
 git clone https://github.com/dgarayr/amk_tools.git
 cd amk_tools
 pip install -e .
-wget -r https://github.com/emartineznunez/amk_cesga/tree/main/install_automekin/modules
+cp -r ${cwd}/modules .

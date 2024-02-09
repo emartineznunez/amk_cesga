@@ -7,7 +7,7 @@ The scripts in the folder install_automekin will show you how to install AutoMeK
    ```
    git clone https://github.com/emartineznunez/amk_cesga.git
    ```
-- Go to the install dir:
+- Go to the directory where the installation script resides:
   ```
   cd amk_cesga/install_automekin
   ```

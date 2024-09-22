@@ -41,4 +41,13 @@ Here is the recipe to install AutoMeKin in FT-III:
   module load amk/local
   sbatch --output=llcalcs.log --error=llcalcs.err -n $ntasks --mem-per-cpu=2G -t 00:10:00 llcalcs.sh ${filename}.dat $ntasks $niter
   ```
-
+- Likewise, the basic script for the high-level calculations should look like this:
+  ```
+  #!/bin/bash
+  ntasks=8
+  ncores=4
+  filename=FA
+  module load amk/local
+  module load g16
+  sbatch --output=hlcalcs.log --error=hlcalcs.err -n $ntasks -c $ncores --mem-per-cpu=2G -t 00:30:00 hlcalcs.sh ${filename}.dat
+  ```

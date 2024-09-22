@@ -34,6 +34,7 @@ Here is the recipe to install AutoMeKin in FT-III:
   ```
 - To use the Slurm job scheduler, your basic script should look something like this (change the parameters appropriately):
   ```
+  #!/bin/bash
   ntasks=20
   niter=2
   filename=FA

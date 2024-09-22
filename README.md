@@ -34,7 +34,10 @@ Here is the recipe to install AutoMeKin in FT-III:
   ```
 - To use the Slurm job scheduler, your basic script should look something like this (change the parameters appropriately):
   ```
+  ntasks=20
+  niter=2
+  filename=FA
   module load amk/local
-  sbatch --output=llcalcs.log --error=llcalcs.err -n 16 --mem-per-cpu=2G -t 00:10:00 llcalcs.sh FA.dat 10 2
+  sbatch --output=llcalcs.log --error=llcalcs.err -n $ntasks --mem-per-cpu=2G -t 00:10:00 llcalcs.sh ${filename}.dat $ntasks $niter
   ```
 

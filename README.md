@@ -24,13 +24,9 @@ Here is the recipe to install AutoMeKin in FT-III:
   module use $HOME/amk-2021/modules
   module use $HOME/amk_tools/modules
   ```
-- Finally, to run `AutoMeKin`, just load the local module:
+- If you want to run a simple test with `AutoMeKin`, just load the local module:
   ```
   module load amk/local
-  ```
-- Likewise, for `amk_tools`, just type:
-  ```
-  module load amk_tools/local
   ```
 - To use the Slurm job scheduler, your basic script of the low-level calculations should look something like this (change the parameters appropriately):
   ```
@@ -50,4 +46,8 @@ Here is the recipe to install AutoMeKin in FT-III:
   module load amk/local
   module load g16
   sbatch --output=hlcalcs.log --error=hlcalcs.err -n $ntasks -c $ncores --mem-per-cpu=2G -t 00:30:00 hlcalcs.sh ${filename}.dat
+  ```
+- For the analysis of the results, you may want o use `amk_tools`:
+  ```
+  module load amk_tools/local
   ```

@@ -32,7 +32,7 @@ Here is the recipe to install AutoMeKin in FT-III:
   ```
   module load amk_tools/local
   ```
-- To use the Slurm job scheduler, your basic script should look something like this (change the parameters appropriately):
+- To use the Slurm job scheduler, your basic script of the low-level calculations should look something like this (change the parameters appropriately):
   ```
   #!/bin/bash
   ntasks=20

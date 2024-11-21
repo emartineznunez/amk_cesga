@@ -10,7 +10,7 @@ autoreconf -i
 make 
 make install
 #Changing module name
-sed 's@#module load g09@module load ase gcccore/system nodejs>14@' $HOME/amk-2021/modules/amk/2021 > $HOME/amk-2021/modules/amk/local
+sed 's@#module load g09@module load ase gcccore/system nodejs@' $HOME/amk-2021/modules/amk/2021 > $HOME/amk-2021/modules/amk/local
 #PATCH for FT-III (no path is needed any more)
 #sed -i 's@srun -N1@srun --exclusive -N1@g;s@corespertask --cpu_bind=none@corespertask@g' $HOME/amk-2021/bin/utils.sh
 #Installing amk_tools
